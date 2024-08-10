@@ -19,7 +19,7 @@ const CodeEditor = () => {
     event.preventDefault();
 
     try {
-      const response = await fetch(`${window.location.origin}/api/notes`, {
+      const response = await fetch(`https://test-ex2u.onrender.com/api`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

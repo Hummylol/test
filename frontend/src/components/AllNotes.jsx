@@ -11,7 +11,7 @@ const AllNotes = () => {
   useEffect(() => {
     const fetchNotes = async () => {
       try {
-        const response = await fetch("https://test-ex2u.onrender.com/api/notes");
+        const response = await fetch("https://test-ex2u.onrender.com/api/allnotes");
         const data = await response.json();
 
         console.log('Fetched data:', data);
@@ -33,7 +33,7 @@ const AllNotes = () => {
 
   const handleDelete = async (noteId) => {
     try {
-      const response = await fetch(`${window.location.origin}/api/notes/${noteId}`, {
+      const response = await fetch(`https://test-ex2u.onrender.com/api/allnotes/${noteId}`, {
         method: 'DELETE',
       });
 
