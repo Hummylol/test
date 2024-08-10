@@ -1,12 +1,17 @@
 import React from 'react';
-import NotesList from './NotesList';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import CodeEditor from './components/CodeEditor'
+import AllNotes from './components/AllNotes';
 
-function App() {
-    return (
-        <div className="App">
-            <NotesList />
-        </div>
-    );
-}
+const App = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<CodeEditor />} />
+        <Route path="/all-notes" element={<AllNotes />} />
+      </Routes>
+    </Router>
+  );
+};
 
 export default App;
