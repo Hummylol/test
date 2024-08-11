@@ -70,7 +70,7 @@ const AllNotes = () => {
   return (
     <>
       <Toaster />
-     <button className="all-notes" onClick={() => navigate('/')}>ADD NOTE </button>
+      <div className="nav-space"><button className="all-notes" onClick={() => navigate('/')}>ADD NOTE</button></div>
       <div className="notes-container">
         {notes.length > 0 ? (
           notes.map((note) => (

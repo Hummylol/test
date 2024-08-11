@@ -154,3 +154,7 @@ body {
   background-color: rgb(255, 255, 255);
   color: rgb(59, 59, 59);
 }
+
+.nav-space{
+  height: 12vh;
+}
